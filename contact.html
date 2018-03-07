@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>About | Sarah Gilbert</title>
+  <title>Contact | Sarah Gilbert</title>
   <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -24,11 +24,25 @@
 
   <div id="main-container" class="container">
     <section class="main-section">
-      <h1>About Me</h1>
+      <h1>Contact</h1>
 
-      <img src="assets/images/headshot.jpg" class="auth-image" alt="Your Name">
-
-      <p>My name is Sarah Gilbert. I live in Centennial, Colorado with my husband, Dave, and our two sons. For the past 20 years, I have been working in the field of public education both as a teacher, and as a school administrator. I have loved my time as an educator and I look forward to bringing my passion and skills to a new profession. I am currently enrolled in the University of Denver Coding Bootcamp and hope to transition into the field of Web Development within the next few months.</p>
+      <form id="contact-form">
+        <ul>
+          <li>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="John Smith" required="required">
+          </li>
+          <li>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="example@gmail.com" required="required">
+          </li>
+          <li>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required="required"></textarea>
+          </li>
+        </ul>
+        <input type="submit">
+      </form>
 
     </section>
 
